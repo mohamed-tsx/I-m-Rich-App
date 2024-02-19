@@ -1,17 +1,26 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.cyan[100],
-        appBar: AppBar(
-          backgroundColor: Colors.cyan[600],
-          centerTitle: true,
-          title: const Text("I'm Rich"),
-        ),
-        body: Center(
-          child: Image.asset("images/daimond.png"),
-        ),
-      )));
+  runApp(
+    MaterialApp(debugShowCheckedModeBanner: false, home: Home()),
+  );
+}
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.cyan[100],
+      appBar: AppBar(
+        backgroundColor: Colors.cyan[600],
+        centerTitle: true,
+        title: const Text("I'm Rich App"),
+      ),
+      body: Center(
+        child: Image.asset("images/daimond.png"),
+      ),
+    );
+  }
 }
