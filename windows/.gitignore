@@ -1,0 +1,27 @@
+# Flutter/Dart specific files
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+build/
+.dart_tool/
+.pub-cache/
+.vscode/
+.idea/
+*.iml
+
+# macOS specific files
+.DS_Store
+
+# Android specific files
+build/
+*.apk
+*.aar
+*.jks
+
+# iOS specific files
+Pods/
+Podfile.lock
+ios/Pods/
+ios/Podfile.lock
